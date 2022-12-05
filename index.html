@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bóng đèn</title>
+</head>
+<h1>What can javaScript do ?</h1>
+<p>JavaScript can change HTML aittribute values </p>
+<p>In this case JavaScrinpt changge the values of the SRC aittribute of an image </p>
+<body style="background-color: #f5c2c7">
+      <img id="bongde" onclick="changecolor()" style="margin-left: 200px" src="anh3/anhtat.gif">
+      <script type="text/javascript">
+          function changecolor(){
+              if(document.getElementById('bongde').src.endsWith("anh3/anhtat.gif"))
+         document.getElementById('bongde').src = "anh3/anhbat.gif"
+              else (document.getElementById('bongde').src = "anh3/anhtat.gif");
+          }
+      </script>
+
+</body>
+</html>
